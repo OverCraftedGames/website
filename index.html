@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverCrafted Games</title>
+  <meta name="description" content="OverCrafted Games, the studio behind the CarbonCraft Minecraft server and the idle fishing game Gut Feeling.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="OverCrafted Games home">
+        <img src="assets/logo.png" alt="" width="34" height="34">
+        <span>OverCrafted Games</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#carboncraft">CarbonCraft</a>
+        <a href="#gut-feeling">Gut Feeling</a>
+        <a href="#forgequest">ForgeQuest</a>
+        <a href="#community">Community</a>
+        <a class="nav-cta" href="#join">Play now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- CarbonCraft: the centerpiece -->
+    <section id="carboncraft" class="cc-hero">
+      <div class="wrap cc-hero-inner">
+        <img class="cc-logo" src="assets/carboncraft/logo.png" alt="CarbonCraft" width="480" height="500">
+        <div class="cc-hero-copy">
+          <p class="eyebrow">Our flagship Minecraft server</p>
+          <h1>Survival with an economy, custom gear and a crew to play with.</h1>
+          <p class="lede">CarbonCraft is a community-run Minecraft server. Claim your land, build a business, level your fishing and mining skills, and earn rewards just for showing up.</p>
+
+          <div class="ip-box" id="join">
+            <div>
+              <span class="ip-label">Server address</span>
+              <code class="ip" id="server-ip">play.carboncraft.xyz</code>
+            </div>
+            <button class="btn btn-mint" id="copy-ip" type="button">Copy IP</button>
+          </div>
+          <p class="server-status" id="server-status" hidden>
+            <span class="dot"></span><span id="status-text"></span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-discord" href="https://discord.gg/carboncraft" target="_blank" rel="noopener">Join the Discord</a>
+            <a class="btn btn-ghost" href="https://carboncraft.tebex.io" target="_blank" rel="noopener">Visit the store</a>
+          </div>
+
+          <div class="social-row" aria-label="CarbonCraft socials">
+            <a class="social-icon" href="https://www.instagram.com/carboncraftxyz" target="_blank" rel="noopener" aria-label="CarbonCraft on Instagram"><i class="icon icon-instagram"></i></a>
+            <a class="social-icon" href="https://www.reddit.com/user/ViibeMinecraft/" target="_blank" rel="noopener" aria-label="CarbonCraft on Reddit"><i class="icon icon-reddit"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cc-features">
+      <div class="wrap">
+        <h2 class="section-title">What's on CarbonCraft</h2>
+        <div class="feature-grid">
+          <div class="feature"><span class="feature-icon" aria-hidden="true">⛃</span><h3>Player economy</h3><p>Earn, trade and spend with every other player on the server.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">⚑</span><h3>PvE land claims</h3><p>Claim your plot and keep what you build safe from griefers.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">✦</span><h3>Custom items</h3><p>Gear and tools you won't find in vanilla Minecraft.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">⚔</span><h3>Mob arena</h3><p>Team up and fight off wave after wave for loot.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">🎣</span><h3>PyroFishing</h3><p>Level your fishing skill, catch custom fish and craft custom rods.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">⛏</span><h3>PyroMining</h3><p>Dig up gemstones, vessels and flux to upgrade your gear.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">★</span><h3>Vote ranks</h3><p>Vote for the server to climb vote tiers and unlock better perks.</p></div>
+          <div class="feature"><span class="feature-icon" aria-hidden="true">⇄</span><h3>Player warps</h3><p>Visit shops and builds that other players have opened up.</p></div>
+        </div>
+
+        <figure class="cc-shot">
+          <img src="assets/carboncraft/mansion.gif" alt="Players gathered by the fireplace in the mansion library on CarbonCraft" loading="lazy" width="1920" height="1080">
+        </figure>
+
+        <div class="how-to">
+          <h3>How to join</h3>
+          <ol>
+            <li>Open Minecraft and choose <strong>Multiplayer</strong>.</li>
+            <li>Click <strong>Add Server</strong>.</li>
+            <li>Enter <code>play.carboncraft.xyz</code> and hit <strong>Done</strong>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gut Feeling: secondary -->
+    <section id="gut-feeling" class="section section-alt">
+      <div class="wrap split">
+        <div class="split-copy">
+          <p class="eyebrow eyebrow-sea">Idle fishing game · Demo out now</p>
+          <h2 class="section-title">Gut Feeling</h2>
+          <p>Cast lines, customize your rod and hire a Waterboy to keep fishing while you're away. Every catch earns money and Fish Guts to spend on upgrades, augments and new biomes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-sea" href="https://overcraftedgames.itch.io/gut-feeling" target="_blank" rel="noopener">Play the free demo</a>
+          </div>
+        </div>
+        <div class="split-media">
+          <img class="shot-main" src="assets/gutfeeling/dock.png" alt="Gut Feeling: fishing off the dock on the open ocean" loading="lazy" width="1264" height="655">
+          <img class="shot-sub" src="assets/gutfeeling/waterboy.png" alt="Gut Feeling: the Waterboy perk screen" loading="lazy" width="1264" height="655">
+        </div>
+      </div>
+    </section>
+
+    <!-- ForgeQuest: very early -->
+    <section id="forgequest" class="section">
+      <div class="wrap">
+        <div class="early">
+          <span class="tag tag-early">Early development</span>
+          <div>
+            <h2>ForgeQuest</h2>
+            <p>An idle crafting game about mining ore and running your own forge. It's still early, and we'll share more once there's something to play.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio" class="section section-alt">
+      <div class="wrap about-grid">
+        <div>
+          <h2 class="section-title">The studio</h2>
+          <p>OverCrafted Games is a small, independent team. We run CarbonCraft, write the code and build the games ourselves, and we ship early so players can shape what we make.</p>
+          <p>Press, partnerships or just saying hi: <a href="mailto:contact@ocgames.xyz">contact@ocgames.xyz</a></p>
+        </div>
+        <img class="studio-mark" src="assets/logo.png" alt="OverCrafted Games logo" width="220" height="220" loading="lazy">
+      </div>
+
+      <div id="community" class="wrap socials">
+        <div class="social-group">
+          <h3>CarbonCraft</h3>
+          <a class="social-link" href="https://discord.gg/carboncraft" target="_blank" rel="noopener"><i class="icon icon-discord"></i><span>Discord<small>discord.gg/carboncraft</small></span></a>
+          <a class="social-link" href="https://www.instagram.com/carboncraftxyz" target="_blank" rel="noopener"><i class="icon icon-instagram"></i><span>Instagram<small>@carboncraftxyz</small></span></a>
+          <a class="social-link" href="https://www.reddit.com/user/ViibeMinecraft/" target="_blank" rel="noopener"><i class="icon icon-reddit"></i><span>Reddit<small>u/ViibeMinecraft</small></span></a>
+        </div>
+        <div class="social-group">
+          <h3>OverCrafted Games</h3>
+          <a class="social-link" href="https://discord.gg/ahVpJH4WA6" target="_blank" rel="noopener"><i class="icon icon-discord"></i><span>Discord<small>Main OCG community</small></span></a>
+          <a class="social-link" href="https://www.instagram.com/overcraftedgames" target="_blank" rel="noopener"><i class="icon icon-instagram"></i><span>Instagram<small>@overcraftedgames</small></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> OverCrafted Games. Not affiliated with Mojang or Microsoft.</span>
+      <nav class="footer-links">
+        <a href="https://carboncraft.tebex.io" target="_blank" rel="noopener">Store</a>
+        <a href="https://overcraftedgames.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        <a class="social-icon" href="https://discord.gg/ahVpJH4WA6" target="_blank" rel="noopener" aria-label="OverCrafted Games Discord"><i class="icon icon-discord"></i></a>
+        <a class="social-icon" href="https://www.instagram.com/overcraftedgames" target="_blank" rel="noopener" aria-label="OverCrafted Games on Instagram"><i class="icon icon-instagram"></i></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
