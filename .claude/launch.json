@@ -4,7 +4,7 @@
     {
       "name": "website",
       "runtimeExecutable": "powershell",
-      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "E:/OverCrafted Games/Website/serve.ps1", "-Port", "5600"],
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "E:/OverCrafted Games/Company/Website/serve.ps1", "-Port", "5600"],
       "port": 5600
     }
   ]
