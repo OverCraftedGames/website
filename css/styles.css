@@ -18,9 +18,9 @@
   --discord: #5865f2;
   --radius: 14px;
   --wrap: 1160px;
-  --font-display: "Space Grotesk", system-ui, sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
+  --font-mono: "Montserrat", system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
