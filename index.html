@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OverCrafted Games</title>
-  <meta name="description" content="OverCrafted Games, the studio behind the CarbonCraft Minecraft server and the idle fishing game Gut Feeling.">
+  <meta name="description" content="OverCrafted Games, the studio behind OCG Network, the OCG Survival Minecraft server and the idle fishing game Gut Feeling.">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
   <header class="site-header">
@@ -22,7 +22,7 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="site-nav" class="site-nav">
-        <a href="#carboncraft">CarbonCraft</a>
+        <a href="#survival">OCG Survival</a>
         <a href="#gut-feeling">Gut Feeling</a>
         <a href="#forgequest">ForgeQuest</a>
         <a href="#community">Community</a>
@@ -32,19 +32,22 @@
   </header>
 
   <main id="top">
-    <!-- CarbonCraft: the centerpiece -->
-    <section id="carboncraft" class="cc-hero">
+    <!-- OCG Survival (formerly CarbonCraft): the centerpiece. The empty #carboncraft
+         anchor keeps old links and the carboncraft.xyz short link landing here. -->
+    <section id="survival" class="cc-hero">
+      <span id="carboncraft" aria-hidden="true"></span>
       <div class="wrap cc-hero-inner">
-        <img class="cc-logo" src="assets/carboncraft/logo.png" alt="CarbonCraft" width="480" height="500">
+        <img class="cc-logo" src="assets/survival/survival-block.svg" alt="" width="440" height="440">
         <div class="cc-hero-copy">
-          <p class="eyebrow">Our flagship Minecraft server</p>
-          <h1>Survival with an economy, custom gear and a crew to play with.</h1>
-          <p class="lede">CarbonCraft is a community-run Minecraft server. Claim your land, build a business, level your fishing and mining skills, and earn rewards just for showing up.</p>
+          <p class="eyebrow">Our Minecraft server · Java &amp; Bedrock</p>
+          <h1>OCG <em>Survival</em></h1>
+          <p class="cc-tagline">Survival with an economy, custom gear and a crew to play with.</p>
+          <p class="lede">The first server on <a href="https://minecraft.ocgames.xyz/" target="_blank" rel="noopener">OCG Network</a>, formerly CarbonCraft. Claim your land, build a business, level your fishing and mining skills, and earn rewards just for showing up.</p>
 
           <div class="ip-box" id="join">
             <div>
               <span class="ip-label">Server address</span>
-              <code class="ip" id="server-ip">play.carboncraft.xyz</code>
+              <code class="ip" id="server-ip">play.ocgames.xyz</code>
             </div>
             <button class="btn btn-mint" id="copy-ip" type="button">Copy IP</button>
           </div>
@@ -54,12 +57,13 @@
 
           <div class="hero-actions">
             <a class="btn btn-discord" href="https://discord.gg/carboncraft" target="_blank" rel="noopener">Join the Discord</a>
-            <a class="btn btn-ghost" href="https://carboncraft.tebex.io" target="_blank" rel="noopener">Visit the store</a>
+            <a class="btn btn-ghost" href="https://minecraft.ocgames.xyz/store.html" target="_blank" rel="noopener">Visit the store</a>
+            <a class="btn btn-ghost" href="https://wiki.carboncraft.xyz/" target="_blank" rel="noopener">Read the wiki</a>
           </div>
 
-          <div class="social-row" aria-label="CarbonCraft socials">
-            <a class="social-icon" href="https://www.instagram.com/carboncraftxyz" target="_blank" rel="noopener" aria-label="CarbonCraft on Instagram"><i class="icon icon-instagram"></i></a>
-            <a class="social-icon" href="https://www.reddit.com/user/ViibeMinecraft/" target="_blank" rel="noopener" aria-label="CarbonCraft on Reddit"><i class="icon icon-reddit"></i></a>
+          <div class="social-row" aria-label="OCG Survival socials">
+            <a class="social-icon" href="https://www.instagram.com/carboncraftxyz" target="_blank" rel="noopener" aria-label="OCG Survival on Instagram"><i class="icon icon-instagram"></i></a>
+            <a class="social-icon" href="https://www.reddit.com/user/ViibeMinecraft/" target="_blank" rel="noopener" aria-label="OCG Survival on Reddit"><i class="icon icon-reddit"></i></a>
           </div>
         </div>
       </div>
@@ -67,7 +71,7 @@
 
     <section class="section cc-features">
       <div class="wrap">
-        <h2 class="section-title">What's on CarbonCraft</h2>
+        <h2 class="section-title">What's on OCG Survival</h2>
         <div class="feature-grid">
           <div class="feature"><span class="feature-icon" aria-hidden="true">⛃</span><h3>Player economy</h3><p>Earn, trade and spend with every other player on the server.</p></div>
           <div class="feature"><span class="feature-icon" aria-hidden="true">⚑</span><h3>PvE land claims</h3><p>Claim your plot and keep what you build safe from griefers.</p></div>
@@ -80,7 +84,7 @@
         </div>
 
         <figure class="cc-shot">
-          <img src="assets/carboncraft/mansion.gif" alt="Players gathered by the fireplace in the mansion library on CarbonCraft" loading="lazy" width="1920" height="1080">
+          <img src="assets/survival/mansion.gif" alt="Players gathered by the fireplace in the mansion library on OCG Survival" loading="lazy" width="1920" height="1080">
         </figure>
 
         <div class="how-to">
@@ -88,7 +92,7 @@
           <ol>
             <li>Open Minecraft and choose <strong>Multiplayer</strong>.</li>
             <li>Click <strong>Add Server</strong>.</li>
-            <li>Enter <code>play.carboncraft.xyz</code> and hit <strong>Done</strong>.</li>
+            <li>Enter <code>play.ocgames.xyz</code> and hit <strong>Done</strong>.</li>
           </ol>
         </div>
       </div>
@@ -129,7 +133,7 @@
       <div class="wrap about-grid">
         <div>
           <h2 class="section-title">The studio</h2>
-          <p>OverCrafted Games is a small, independent team. We run CarbonCraft, write the code and build the games ourselves, and we ship early so players can shape what we make.</p>
+          <p>OverCrafted Games is a small, independent team. We run <a href="https://minecraft.ocgames.xyz/" target="_blank" rel="noopener">OCG Network</a>, write the code and build the games ourselves, and we ship early so players can shape what we make.</p>
           <p>Press, partnerships or just saying hi: <a href="mailto:contact@ocgames.xyz">contact@ocgames.xyz</a></p>
         </div>
         <img class="studio-mark" src="assets/logo.png" alt="OverCrafted Games logo" width="220" height="220" loading="lazy">
@@ -137,7 +141,7 @@
 
       <div id="community" class="wrap socials">
         <div class="social-group">
-          <h3>CarbonCraft</h3>
+          <h3>OCG Survival</h3>
           <a class="social-link" href="https://discord.gg/carboncraft" target="_blank" rel="noopener"><i class="icon icon-discord"></i><span>Discord<small>discord.gg/carboncraft</small></span></a>
           <a class="social-link" href="https://www.instagram.com/carboncraftxyz" target="_blank" rel="noopener"><i class="icon icon-instagram"></i><span>Instagram<small>@carboncraftxyz</small></span></a>
           <a class="social-link" href="https://www.reddit.com/user/ViibeMinecraft/" target="_blank" rel="noopener"><i class="icon icon-reddit"></i><span>Reddit<small>u/ViibeMinecraft</small></span></a>
@@ -155,7 +159,7 @@
     <div class="wrap footer-inner">
       <span>© <span id="year">2026</span> OverCrafted Games. Not affiliated with Mojang or Microsoft.</span>
       <nav class="footer-links">
-        <a href="https://carboncraft.tebex.io" target="_blank" rel="noopener">Store</a>
+        <a href="https://minecraft.ocgames.xyz/store.html" target="_blank" rel="noopener">Store</a>
         <a href="https://overcraftedgames.itch.io/" target="_blank" rel="noopener">itch.io</a>
         <a class="social-icon" href="https://discord.gg/ahVpJH4WA6" target="_blank" rel="noopener" aria-label="OverCrafted Games Discord"><i class="icon icon-discord"></i></a>
         <a class="social-icon" href="https://www.instagram.com/overcraftedgames" target="_blank" rel="noopener" aria-label="OverCrafted Games on Instagram"><i class="icon icon-instagram"></i></a>

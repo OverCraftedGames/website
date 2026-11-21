@@ -1,20 +1,19 @@
 :root {
-  /* OverCrafted brand */
-  --teal: #3dfff0;
-  /* CarbonCraft palette, taken from the server's menu gradients */
-  --cc-navy: #0b1a3a;
-  --cc-blue: #3e74a3;
-  --cc-sky: #6fa8d6;
-  --mint: #00fb9a;
+  /* OverCrafted brand, matching the OCG Network site (minecraft.ocgames.xyz) */
+  --teal: #3afff5;
+  /* OCG Survival's accent green */
+  --mint: #7ed957;
+  --mint-hover: #a3ea85;
   /* Gut Feeling */
   --sea: #ffd23f;
 
-  --ink: #070b14;
-  --ink-2: #0d1424;
-  --ink-3: #141d31;
-  --line: #22304a;
-  --text: #e9eef7;
-  --muted: #95a3bb;
+  --ink: #040607;
+  --ink-2: #0a0f10;
+  --ink-3: #101819;
+  --line: #1b2c2d;
+  --line-strong: #2e5552;
+  --text: #f4fbfb;
+  --muted: #869a9b;
   --discord: #5865f2;
   --radius: 14px;
   --wrap: 1160px;
@@ -69,7 +68,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(7, 11, 20, .85);
+  background: rgba(4, 6, 7, .85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -103,7 +102,7 @@ h1, h2, h3 {
   border-radius: 999px;
   font-weight: 600;
 }
-.site-nav .nav-cta:hover { color: var(--ink); background: #6dffc2; }
+.site-nav .nav-cta:hover { color: var(--ink); background: var(--mint-hover); }
 
 .nav-toggle {
   display: none;
@@ -133,25 +132,25 @@ h1, h2, h3 {
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-mint { background: var(--mint); color: var(--ink); }
-.btn-mint:hover { background: #6dffc2; }
+.btn-mint:hover { background: var(--mint-hover); }
 .btn-discord { background: var(--discord); color: #fff; }
 .btn-discord:hover { background: #6d78ff; }
 .btn-sea { background: var(--sea); color: #1a1406; }
 .btn-sea:hover { background: #ffe07a; }
-.btn-ghost { border-color: var(--line); color: var(--text); background: rgba(7, 11, 20, .4); }
-.btn-ghost:hover { border-color: var(--cc-sky); }
+.btn-ghost { border-color: var(--line); color: var(--text); background: rgba(4, 6, 7, .4); }
+.btn-ghost:hover { border-color: var(--teal); }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 
-/* CarbonCraft hero */
+/* OCG Survival hero */
 .cc-hero {
   position: relative;
   padding: 72px 0 88px;
-  background: var(--cc-navy);
+  background: var(--ink);
   overflow: hidden;
   isolation: isolate;
 }
-/* Banner art, blurred so its wordmark doesn't compete with the headline */
+/* A green glow over a fine diamond lattice, echoing the OCG logo (as on the network site) */
 .cc-hero::before,
 .cc-hero::after {
   content: "";
@@ -160,15 +159,15 @@ h1, h2, h3 {
   z-index: -1;
 }
 .cc-hero::before {
-  inset: -20px;
-  background: url("../assets/carboncraft/banner.jpg") center / cover no-repeat;
-  filter: blur(8px) saturate(1.2);
-  opacity: .55;
+  background:
+    repeating-linear-gradient(45deg, rgba(58, 255, 245, .035) 0 1px, transparent 1px 34px),
+    repeating-linear-gradient(-45deg, rgba(58, 255, 245, .035) 0 1px, transparent 1px 34px);
 }
 .cc-hero::after {
   background:
-    radial-gradient(900px 500px at 25% 50%, rgba(62, 116, 163, .35), transparent 70%),
-    linear-gradient(180deg, rgba(7, 11, 20, .2), rgba(7, 11, 20, .6) 75%, var(--ink));
+    radial-gradient(900px 500px at 25% 45%, rgba(126, 217, 87, .16), transparent 70%),
+    radial-gradient(700px 420px at 95% 0%, rgba(58, 255, 245, .08), transparent 70%),
+    linear-gradient(180deg, transparent 70%, var(--ink));
 }
 .cc-hero-inner {
   display: grid;
@@ -186,8 +185,10 @@ h1, h2, h3 {
 @keyframes float {
   50% { transform: translateY(-10px); }
 }
-.cc-hero h1 { font-size: clamp(2rem, 4.4vw, 3.3rem); text-shadow: 0 2px 20px rgba(0, 0, 0, .5); }
-.lede { color: #c3cee0; font-size: 1.1rem; max-width: 34em; }
+.cc-hero h1 { margin-bottom: 10px; font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1; }
+.cc-hero h1 em { font-style: normal; color: var(--mint); }
+.cc-tagline { margin: 0 0 14px; color: var(--text); font: 600 clamp(1.15rem, 2.2vw, 1.5rem)/1.3 var(--font-display); }
+.lede { color: #cddada; font-size: 1.1rem; max-width: 34em; }
 
 .ip-box {
   display: flex;
@@ -197,10 +198,10 @@ h1, h2, h3 {
   margin-top: 28px;
   padding: 14px 14px 14px 22px;
   max-width: 480px;
-  background: rgba(7, 11, 20, .75);
-  border: 1px solid rgba(0, 251, 154, .35);
+  background: rgba(4, 6, 7, .75);
+  border: 1px solid rgba(126, 217, 87, .35);
   border-radius: var(--radius);
-  box-shadow: 0 0 0 4px rgba(0, 251, 154, .06);
+  box-shadow: 0 0 0 4px rgba(126, 217, 87, .06);
 }
 .ip-label {
   display: block;
@@ -242,7 +243,7 @@ h1, h2, h3 {
   border-radius: var(--radius);
   transition: border-color .2s, transform .2s;
 }
-.feature:hover { border-color: var(--cc-blue); transform: translateY(-2px); }
+.feature:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .feature-icon {
   display: grid;
   place-items: center;
@@ -250,8 +251,8 @@ h1, h2, h3 {
   height: 40px;
   margin-bottom: 14px;
   border-radius: 10px;
-  background: rgba(62, 116, 163, .25);
-  color: var(--cc-sky);
+  background: rgba(58, 255, 245, .1);
+  color: var(--teal);
   font-size: 1.2rem;
 }
 .feature h3 { font-size: 1.05rem; margin-bottom: 6px; }
@@ -268,11 +269,11 @@ h1, h2, h3 {
   margin-top: 40px;
   padding: 28px;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(62, 116, 163, .25), rgba(0, 251, 154, .08));
+  background: linear-gradient(135deg, rgba(58, 255, 245, .1), rgba(126, 217, 87, .08));
   border: 1px solid var(--line);
 }
 .how-to h3 { font-size: 1.3rem; }
-.how-to ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; color: #c3cee0; }
+.how-to ol { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; color: #cddada; }
 .how-to code { color: var(--mint); }
 
 /* Gut Feeling */
@@ -350,11 +351,11 @@ h1, h2, h3 {
   height: 42px;
   border-radius: 50%;
   border: 1px solid var(--line);
-  background: rgba(7, 11, 20, .5);
+  background: rgba(4, 6, 7, .5);
   color: var(--muted);
   transition: color .15s, border-color .15s;
 }
-.social-icon:hover { color: var(--text); border-color: var(--cc-sky); }
+.social-icon:hover { color: var(--text); border-color: var(--teal); }
 .footer-links .social-icon { width: 34px; height: 34px; }
 .footer-links .social-icon .icon { width: 16px; height: 16px; }
 
@@ -384,7 +385,7 @@ h1, h2, h3 {
   font-weight: 600;
   transition: border-color .15s, transform .15s;
 }
-.social-link:hover { border-color: var(--cc-blue); transform: translateY(-1px); }
+.social-link:hover { border-color: var(--line-strong); transform: translateY(-1px); }
 .social-link span { display: flex; flex-direction: column; line-height: 1.3; }
 .social-link small { font-weight: 400; color: var(--muted); font-size: .85rem; }
 .social-link .icon { width: 22px; height: 22px; }
